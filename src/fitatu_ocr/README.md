@@ -1,0 +1,9 @@
+- src/ to folder na właściwy kod aplikacji, nie na dane ani wyniki.
+- src/fitatu_ocr/ to główny pakiet projektu, czyli kod, który potem będą importować testy i skrypt run_ocr.py.
+- schemas/ będzie trzymać modele danych, np. OCRToken, FoodItem, Meal.
+- parsing/ będzie trzymać funkcje do normalizacji tekstu i później parser danych z OCR.
+- ocr/ będzie trzymać wrapper do lokalnego PaddleOCR.
+- layout/ będzie odpowiadać za bounding boxy, współrzędne i grupowanie tekstu.
+- merging/ później połączy kilka screenshotów jednego dnia.
+- validation/ będzie sprawdzać poprawność i spójność danych.
+- debug/ będzie generować obrazy z ramkami OCR.

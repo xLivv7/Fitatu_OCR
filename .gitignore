@@ -1,4 +1,4 @@
-# Python bytecode and caches
+# Python bytecode and test caches
 __pycache__/
 *.py[cod]
 *$py.class
@@ -14,6 +14,9 @@ venv/
 env/
 ENV/
 
+.agents/
+.codex/
+
 # Local configuration and secrets
 .env
 .env.*
@@ -27,21 +30,13 @@ secrets/
 credentials/
 config.local.*
 
-# Private input data: screenshots and annotations may contain personal data
-data/raw/
-data/test/
-data/annotations/
+# Private project data: screenshots and annotations can contain personal data
+data/
 !data/.gitkeep
-!data/raw/.gitkeep
-!data/test/.gitkeep
-!data/annotations/.gitkeep
 
 # Generated OCR outputs and debug artifacts
 outputs/
 !outputs/.gitkeep
-!outputs/raw_ocr/.gitkeep
-!outputs/parsed/.gitkeep
-!outputs/debug_images/.gitkeep
 
 # Logs and temporary files
 *.log
@@ -58,3 +53,4 @@ desktop.ini
 .vscode/settings.json
 .vscode/launch.json
 .vscode/tasks.json
+
