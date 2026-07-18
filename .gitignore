@@ -1,0 +1,60 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.env
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/
+credentials/
+config.local.*
+
+# Private input data: screenshots and annotations may contain personal data
+data/raw/
+data/test/
+data/annotations/
+!data/.gitkeep
+!data/raw/.gitkeep
+!data/test/.gitkeep
+!data/annotations/.gitkeep
+
+# Generated OCR outputs and debug artifacts
+outputs/
+!outputs/.gitkeep
+!outputs/raw_ocr/.gitkeep
+!outputs/parsed/.gitkeep
+!outputs/debug_images/.gitkeep
+
+# Logs and temporary files
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+*.bak
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
