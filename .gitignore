@@ -8,6 +8,12 @@ __pycache__/
 .coverage
 htmlcov/
 
+# Python package/build metadata
+*.egg-info/
+.eggs/
+build/
+dist/
+
 # Virtual environments
 .venv/
 venv/
