@@ -1,6 +1,9 @@
 from pydantic import BaseModel, Field, model_validator
 
+
 class OCRToken(BaseModel):
+    """Single OCR text fragment with absolute and relative coordinates."""    
+    
     text: str
     normalized_text: str
     bbox: list[float] = Field(min_length=4, max_length=4)
